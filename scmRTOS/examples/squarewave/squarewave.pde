@@ -1,8 +1,8 @@
 #include <scmRTOS.h>
 
-scmRTOS_PROCESS(0, 100, loop_low);
+scmRTOS_PROCESS(0, 100, loop_high);
 scmRTOS_PROCESS(1, 256, loop);
-scmRTOS_PROCESS(2, 100, loop_high);
+scmRTOS_PROCESS(2, 100, loop_low);
 
 volatile uint8_t v;
 

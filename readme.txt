@@ -39,7 +39,7 @@ Processes are configured with the scmRTOS_PROCESS() macro:
 	scmRTOS_PROCESS(<process number>, <stack size>, <loop function>);
 
 The available process numbers are 0, 1 and 2.  Process 0 has the
-lowest priority, and process 2 the highest priority.  There is no
+highest priority, and process 2 the lowest priority.  There is no
 sharing of the CPU between processes; a lower priority process will
 only run if the higher-priority process is blocked (e.g. in OS::delay).
 
